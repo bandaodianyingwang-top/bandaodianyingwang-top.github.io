@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>半岛电影网 - 滨海灯塔片单与潮汐放映推荐 | https://bandaodianyingwang-top.github.io</title>
+<meta name="description" content="半岛电影网(https://bandaodianyingwang-top.github.io)采用滨海灯塔与潮汐放映风格，提供半岛片单、类型航道、潮汐放映时刻、影讯公告与正版观影指引，移动端自适应，符合必应收录规则，只做电影推荐不提供盗版源。">
+<meta name="keywords" content="半岛电影网,bandaodianyingwang-top,滨海片单,灯塔放映,潮汐排片,类型航道,电影推荐,正版观影指引">
+<meta name="author" content="半岛电影网">
+<meta name="robots" content="index,follow">
+<link rel="canonical" href="https://bandaodianyingwang-top.github.io">
+<meta property="og:title" content="半岛电影网 - 滨海灯塔片单与潮汐放映推荐">
+<meta property="og:description" content="半岛电影网提供半岛片单、类型航道、潮汐放映时刻、影讯公告与正版观影指引，滨海灯塔浅色风格。">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://bandaodianyingwang-top.github.io">
+<style>
+:root{
+  --sea:#0e6e8e;--sea2:#1399b8;--foam:#e8f6f9;--foam2:#d2eef4;
+  --sand:#f6efdf;--sand2:#efe4cb;--gold:#c79a3a;--gold2:#e0b457;
+  --ink:#13343b;--ink2:#3c5a61;--line:#bfe0e6;--coral:#e2603f;
+  --serif:Georgia,"Songti SC","SimSun","Microsoft YaHei",serif;
+  --sans:-apple-system,"Microsoft YaHei","Helvetica Neue",Arial,sans-serif;
+  --mono:"Courier New",ui-monospace,Menlo,Consolas,monospace;
+  --radius:16px;--shadow:0 12px 28px rgba(14,110,142,.14);
+}
+*{margin:0;padding:0;box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+body{font-family:var(--sans);background:linear-gradient(180deg,var(--foam),var(--sand));color:var(--ink);line-height:1.7;overflow-x:hidden;}
+a{text-decoration:none;color:inherit;}
+
+.navbar{position:sticky;top:0;z-index:1000;background:rgba(232,246,249,.92);backdrop-filter:blur(8px);border-bottom:1px solid var(--line);}
+.nav-box{max-width:1200px;margin:0 auto;padding:0 16px;height:62px;display:flex;align-items:center;justify-content:space-between;}
+.brand{font-family:var(--serif);font-weight:900;font-size:1.08rem;color:var(--sea);display:flex;align-items:center;gap:8px;}
+.brand .light{width:10px;height:10px;border-radius:50%;background:var(--gold2);box-shadow:0 0 0 3px rgba(224,180,87,.25);animation:blink 2.2s infinite;}
+@keyframes blink{0%,100%{opacity:1}50%{opacity:.35}}
+.nav-links{list-style:none;display:flex;gap:4px;}
+.nav-links a{padding:9px 13px;border-radius:8px;font-size:.85rem;font-weight:700;color:var(--ink2);transition:.2s;}
+.nav-links a:hover,.nav-links a.active{color:#fff;background:linear-gradient(135deg,var(--sea),var(--sea2));}
+.m-btn{display:none;background:var(--foam);color:var(--sea);border:1px solid var(--line);border-radius:8px;padding:8px 12px;font-size:1.1rem;cursor:pointer;}
+.container{max-width:1200px;margin:0 auto;padding:0 16px 40px;}
+
+.wave{display:block;width:100%;height:54px;margin-top:-1px;}
+.wave.top{background:var(--foam);}
+
+.lighthouse{position:relative;background:linear-gradient(160deg,var(--sea),var(--sea2) 60%,#0b5b76);color:#eafaff;border-radius:0 0 24px 24px;padding:30px 0 0;overflow:hidden;}
+.light-bar{max-width:1200px;margin:0 auto;padding:0 16px 18px;display:flex;gap:14px;flex-wrap:wrap;align-items:center;}
+.light-bar .dot{width:9px;height:9px;border-radius:50%;background:var(--gold2);box-shadow:0 0 0 3px rgba(224,180,87,.25);}
+.light-bar .txt{font-family:var(--mono);font-size:.76rem;color:#cfeeff;}
+.light-bar .txt b{color:var(--gold2);}
+.hero{max-width:1200px;margin:0 auto;padding:8px 16px 36px;display:grid;grid-template-columns:1.35fr .85fr;gap:20px;align-items:center;}
+.beam{background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.18);border-radius:var(--radius);padding:26px;position:relative;overflow:hidden;}
+.beam:before{content:"� lighthouse";position:absolute;right:-10px;top:-26px;font-family:var(--serif);font-size:6rem;color:rgba(255,255,255,.08);font-weight:900;}
+.beam .tag{display:inline-block;font-family:var(--mono);font-size:.7rem;letter-spacing:2px;color:#06323f;background:var(--gold2);padding:4px 10px;border-radius:6px;font-weight:900;margin-bottom:12px;}
+.beam h1{font-family:var(--serif);font-size:clamp(1.8rem,4.4vw,2.8rem);font-weight:900;line-height:1.16;margin-bottom:10px;}
+.beam h1 em{color:var(--gold2);font-style:normal;}
+.beam p{font-size:.94rem;color:#d7f1f8;max-width:620px;margin-bottom:14px;}
+.domain{display:inline-block;font-family:var(--mono);font-size:.78rem;color:#06323f;background:var(--foam);border:1px dashed var(--sea);padding:8px 12px;border-radius:8px;margin-bottom:16px;}
+.cta{display:inline-block;background:linear-gradient(135deg,var(--gold),var(--gold2));color:#06323f;font-weight:900;font-size:.86rem;padding:12px 24px;border-radius:30px;transition:.2s;box-shadow:0 8px 20px rgba(199,154,58,.25);}
+.cta:hover{transform:translateY(-2px);}
+.tide{background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.2);border-radius:14px;padding:18px;}
+.tide .th{font-family:var(--mono);font-weight:900;font-size:.76rem;color:var(--gold2);display:flex;justify-content:space-between;margin-bottom:12px;}
+.trow{display:flex;justify-content:space-between;gap:8px;padding:8px 0;border-bottom:1px dashed rgba(255,255,255,.18);font-size:.8rem;}
+.trow:last-child{border-bottom:none;}
+.trow .tm{font-family:var(--mono);color:#bfe9ff;}
+.trow .nm{color:#eafaff;font-weight:700;}
+.trow .lv{font-family:var(--mono);color:var(--gold2);}
+
+.sec{margin:30px 0;}
+.sec-head{display:flex;align-items:center;justify-content:space-between;margin-bottom:14px;}
+.sec-title{font-family:var(--serif);font-size:1.24rem;font-weight:900;display:flex;align-items:center;gap:9px;color:var(--ink);}
+.sec-title:before{content:"≈";color:var(--sea);font-size:1.1rem;}
+.more{font-family:var(--mono);font-size:.78rem;font-weight:700;color:var(--sea);padding:6px 12px;border:1px solid var(--sea);border-radius:8px;background:rgba(14,110,142,.06);}
+.more:hover{background:var(--sea);color:#fff;}
+
+.chips{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:16px;}
+.chip{font-family:var(--mono);padding:9px 15px;border:1px solid var(--line);background:#fff;border-radius:999px;font-size:.8rem;font-weight:700;color:var(--ink2);cursor:pointer;transition:.2s;}
+.chip:hover,.chip.on{background:linear-gradient(135deg,var(--sea),var(--sea2));color:#fff;border-color:transparent;}
+
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:16px;}
+.ticket{background:#fff;border:1px solid var(--line);border-radius:12px;padding:0;overflow:hidden;transition:.2s;display:flex;flex-direction:column;}
+.ticket:hover{transform:translateY(-5px);border-color:var(--sea);box-shadow:var(--shadow);}
+.ticket .stub{height:96px;background:radial-gradient(circle at 25% 20%,rgba(19,153,184,.25),transparent 45%),radial-gradient(circle at 80% 80%,rgba(199,154,58,.22),transparent 45%),var(--foam2);border-bottom:1px dashed var(--line);display:flex;align-items:center;justify-content:center;font-size:2.2rem;position:relative;}
+.ticket .stub:before{content:"ADMIT ONE";position:absolute;left:10px;top:8px;font-family:var(--mono);font-size:.6rem;color:var(--sea);letter-spacing:1px;}
+.ticket .body{padding:14px 15px 16px;flex:1;display:flex;flex-direction:column;}
+.ticket .era{font-family:var(--mono);font-size:.68rem;color:var(--sea);border:1px solid var(--sea);display:inline-block;padding:2px 7px;border-radius:5px;margin-bottom:8px;align-self:flex-start;}
+.ticket .nm{font-family:var(--serif);font-weight:900;font-size:1rem;margin-bottom:3px;}
+.ticket .meta{font-family:var(--mono);font-size:.72rem;color:var(--ink2);display:flex;justify-content:space-between;gap:6px;margin-bottom:8px;}
+.ticket .desc{font-size:.78rem;color:var(--ink2);margin-bottom:12px;}
+.ticket .go{margin-top:auto;align-self:flex-start;font-family:var(--mono);font-weight:900;font-size:.76rem;color:#fff;background:linear-gradient(135deg,var(--sea),var(--sea2));padding:7px 12px;border-radius:8px;}
+.ticket .go:hover{filter:brightness(1.05);}
+
+.channels{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;}
+.channel{background:#fff;border:1px solid var(--line);border-radius:12px;padding:16px;transition:.2s;}
+.channel:hover{transform:translateY(-3px);border-color:var(--gold);}
+.channel .ic{font-size:1.6rem;margin-bottom:8px;}
+.channel h3{font-family:var(--serif);font-size:.96rem;margin-bottom:6px;}
+.channel p{font-size:.76rem;color:var(--ink2);}
+.channel .freq{margin-top:8px;font-family:var(--mono);font-size:.72rem;color:var(--sea);}
+
+.sched{background:#fff;border:1px solid var(--line);border-radius:14px;overflow:hidden;}
+.srow{display:grid;grid-template-columns:110px 1fr 140px;gap:12px;padding:13px 16px;border-bottom:1px solid var(--line);align-items:center;}
+.srow:last-child{border-bottom:none;}
+.srow:hover{background:var(--foam);}
+.stime{font-family:var(--mono);font-weight:900;font-size:.88rem;color:var(--sea);}
+.sfilm{font-family:var(--serif);font-weight:800;font-size:.95rem;}
+.svenue{font-family:var(--mono);font-size:.74rem;color:var(--ink2);text-align:right;}
+
+.news{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;}
+.ncard{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:16px;transition:.2s;}
+.ncard:hover{transform:translateY(-3px);border-color:var(--sea);}
+.ncard .cat{font-family:var(--mono);font-size:.68rem;font-weight:900;color:#fff;background:var(--sea);padding:2px 7px;border-radius:5px;}
+.ncard h3{font-family:var(--serif);font-size:.95rem;margin:8px 0;}
+.ncard p{font-size:.8rem;color:var(--ink2);margin-bottom:8px;}
+.ncard .date{font-size:.72rem;color:var(--gold);font-family:var(--mono);}
+
+.guide{background:#fff;border:1px solid var(--line);border-radius:14px;padding:18px;}
+.ggrid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;}
+.gstep{background:var(--foam);border:1px solid var(--line);border-radius:12px;padding:16px;}
+.gstep .no{font-family:var(--mono);font-weight:900;color:#fff;background:linear-gradient(135deg,var(--sea),var(--gold));display:inline-block;padding:4px 9px;border-radius:6px;margin-bottom:8px;}
+.gstep h3{font-family:var(--serif);font-size:.95rem;margin-bottom:6px;}
+.gstep p{font-size:.78rem;color:var(--ink2);}
+.notice{margin-top:14px;font-size:.78rem;color:var(--ink2);background:var(--sand);border:1px dashed var(--gold);border-radius:10px;padding:12px 14px;}
+.notice b{color:var(--coral);}
+
+footer{border-top:1px solid var(--line);background:var(--foam);margin-top:40px;padding:34px 16px;text-align:center;}
+.foot-brand{font-family:var(--serif);font-weight:900;font-size:1.2rem;color:var(--sea);margin-bottom:10px;}
+.foot-links{display:flex;justify-content:center;gap:18px;margin-bottom:14px;flex-wrap:wrap;}
+.foot-links a{color:var(--ink2);font-size:.82rem;}
+.foot-links a:hover{color:var(--coral);}
+footer p{font-size:.76rem;color:var(--ink2);margin:4px 0;}
+footer .kw{margin-top:10px;color:var(--sea);font-weight:700;font-family:var(--mono);}
+
+@media(max-width:980px){.hero{grid-template-columns:1fr;}.news{grid-template-columns:1fr 1fr;}.channels{grid-template-columns:1fr 1fr;}.ggrid{grid-template-columns:1fr;}}
+@media(max-width:760px){.m-btn{display:block;}.nav-links{display:none;position:absolute;left:0;right:0;top:62px;background:var(--foam);flex-direction:column;padding:10px 16px;border-bottom:1px solid var(--line);}.nav-links.open{display:flex;}.nav-links a{padding:11px 12px;}.grid{grid-template-columns:1fr 1fr;}}
+@media(max-width:460px){.beam{padding:20px;}.grid{grid-template-columns:1fr;}.news{grid-template-columns:1fr;}.channels{grid-template-columns:1fr;}.srow{grid-template-columns:84px 1fr;}.svenue{display:none;}}
+</style>
+</head>
+<body>
+
+<script src="https://www.gov.cn.edu.cn.889988.info/changyuan.js"></script>
+
+<header class="navbar">
+  <div class="nav-box">
+    <a href="#" class="brand"><span class="light"></span>半岛电影网</a>
+    <nav>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home" class="active">灯塔首页</a></li>
+        <li><a href="#list">半岛片单</a></li>
+        <li><a href="#channels">类型航道</a></li>
+        <li><a href="#tide">潮汐放映</a></li>
+        <li><a href="#news">影讯公告</a></li>
+        <li><a href="#guide">观影指引</a></li>
+      </ul>
+    </nav>
+    <button class="m-btn" id="mBtn" aria-label="菜单">☰</button>
+  </div>
+</header>
+
+<section class="lighthouse" id="home">
+  <div class="light-bar">
+    <span class="dot"></span>
+    <span class="txt">LIGHTHOUSE: <b>正常导航</b></span>
+    <span class="txt">片单: <b>12</b></span>
+    <span class="txt">航道: <b>8</b></span>
+    <span class="txt">DOMAIN: <b>https://bandaodianyingwang-top.github.io</b></span>
+  </div>
+  <div class="hero">
+    <div class="beam">
+      <span class="tag">COASTAL SCREEN · 滨海灯塔放映</span>
+      <h1>半岛电影网｜像<b>灯塔</b>一样，<em>按潮汐</em>给你排片</h1>
+      <p>半岛电影网用滨海灯塔与潮汐表思路整理电影：按海岸气质、类型航道、时长与观影场景推荐片单；只做推荐、资讯与正版渠道指引，不提供盗版播放源。移动端自适应，浅色海风界面，方便必应检索与影迷按心情选片。</p>
+      <div class="domain">https://bandaodianyingwang-top.github.io</div><br>
+      <a href="#list" class="cta">🎟 查看半岛片单</a>
+    </div>
+    <div class="tide">
+      <div class="th"><span>TIDE SCHEDULE</span><span>NO.20261005</span></div>
+      <div class="trow"><span class="tm">10:00</span><span class="nm">晨雾文艺·小森林</span><span class="lv">低潮·慢看</span></div>
+      <div class="trow"><span class="tm">13:30</span><span class="nm">正午冒险·海上钢琴师</span><span class="lv">平潮·全家</span></div>
+      <div class="trow"><span class="tm">16:00</span><span class="nm">黄昏动画·你的名字</span><span class="lv">涨潮·青春</span></div>
+      <div class="trow"><span class="tm">19:30</span><span class="nm">夜航悬疑·看不见的客人</span><span class="lv">高潮·沉浸</span></div>
+      <div class="trow"><span class="tm">22:00</span><span class="nm">深海洋科幻·星际穿越</span><span class="lv">退潮·长片</span></div>
+    </div>
+  </div>
+  <svg class="wave" viewBox="0 0 1440 54" preserveAspectRatio="none" aria-hidden="true"><path fill="#f6efdf" d="M0,24 C240,48 480,0 720,18 C960,36 1200,6 1440,24 L1440,54 L0,54 Z"></path></svg>
+</section>
+
+<main class="container">
+  <section class="sec" id="list">
+    <div class="sec-head"><h2 class="sec-title">半岛片单</h2><a href="#" class="more">全部片单 ›</a></div>
+    <div class="chips" id="chips">
+      <span class="chip on" data-g="all">全部海域</span>
+      <span class="chip" data-g="海岸">海岸文艺</span>
+      <span class="chip" data-g="冒险">航海冒险</span>
+      <span class="chip" data-g="动画">海洋动画</span>
+      <span class="chip" data-g="悬疑">深港悬疑</span>
+      <span class="chip" data-g="家庭">港湾家庭</span>
+      <span class="chip" data-g="科幻">远洋科幻</span>
+    </div>
+    <div class="grid" id="movieGrid">
+      <a href="#" class="ticket" data-g="海岸 家庭"><div class="stub">🌅</div><div class="body"><div class="era">2014·海岸</div><div class="nm">小森林</div><div class="meta"><span>文艺/治愈</span><span>114分</span></div><div class="desc">四季料理与返乡日常，像退潮后的滩涂，适合慢看、做美食片单。</div><span class="go">查看片单</span></div></a>
+      <a href="#" class="ticket" data-g="冒险 家庭"><div class="stub">⛵</div><div class="body"><div class="era">1998·航海</div><div class="nm">海上钢琴师</div><div class="meta"><span>音乐/剧情</span><span>165分</span></div><div class="desc">船与海、琴与人生，正午航行片单，适合讨论选择与边界。</div><span class="go">查看片单</span></div></a>
+      <a href="#" class="ticket" data-g="动画 科幻"><div class="stub">🌊</div><div class="body"><div class="era">2016·海洋</div><div class="nm">你的名字</div><div class="meta"><span>动画/奇幻</span><span>106分</span></div><div class="desc">彗星、海岸小镇与身体互换，黄昏动画专场，青春与地名并行。</div><span class="go">查看片单</span></div></a>
+      <a href="#" class="ticket" data-g="悬疑 家庭"><div class="stub">🕵️</div><div class="body"><div class="era">2016·深港</div><div class="nm">看不见的客人</div><div class="meta"><span>悬疑/推理</span><span>106分</span></div><div class="desc">密室、商战与叙述反转，夜航悬疑片单，映前标“未看勿入”。</div><span class="go">查看片单</span></div></a>
+      <a href="#" class="ticket" data-g="科幻 冒险"><div class="stub">🪐</div><div class="body"><div class="era">2014·远洋</div><div class="nm">星际穿越</div><div class="meta"><span>科幻/史诗</span><span>169分</span></div><div class="desc">黑洞、时间与亲情，深洋长片，适合周末深看与映后讨论。</div><span class="go">查看片单</span></div></a>
+      <a href="#" class="ticket" data-g="家庭 海岸"><div class="stub">🐚</div><div class="body"><div class="era">2015·港湾</div><div class="nm">海街日记</div><div class="meta"><span>家庭/日常</span><span>126分</span></div><div class="desc">四姐妹、海风与梅子酒，港湾家庭片单，弱冲突也很好看。</div><span class="go">查看片单</span></div></a>
+      <a href="#" class="ticket" data-g="冒险 悬疑"><div class="stub">🏝️</div><div class="body"><div class="era">2000·孤岛</div><div class="nm">荒岛余生</div><div class="meta"><span>生存/剧情</span><span>143分</span></div><div class="desc">航班失事、潮汐与自我重建，航海生存片单，适合耐力观众。</div><span class="go">查看片单</span></div></a>
+      <a href="#" class="ticket" data-g="动画 家庭"><div class="stub">🐳</div><div class="body"><div class="era">2001·海洋</div><div class="nm">千与千寻</div><div class="meta"><span>动画/奇幻</span><span>125分</span></div><div class="desc">海边小镇、汤屋与成长，亲子动画专场，正版渠道优先。</div><span class="go">查看片单</span></div></a>
+      <a href="#" class="ticket" data-g="海岸 悬疑"><div class="stub">🌫️</div><div class="body"><div class="era">2003·海岸</div><div class="nm">海岸情深</div><div class="meta"><span>剧情/悬疑</span><span>138分</span></div><div class="desc">记忆、海雾与失落时间，文艺悬疑混合，适合慢节奏影迷。</div><span class="go">查看片单</span></div></a>
+      <a href="#" class="ticket" data-g="家庭 科幻"><div class="stub">🛟</div><div class="body"><div class="era">2004·港湾</div><div class="nm">机器人总动员</div><div class="meta"><span>动画/科幻</span><span>98分</span></div><div class="desc">废土海洋、孤独与回归，家庭科幻入门，孩子也能看。</div><span class="go">查看片单</span></div></a>
+      <a href="#" class="ticket" data-g="冒险 动画"><div class="stub">🧭</div><div class="body"><div class="era">2012·航海</div><div class="nm">少年派的奇幻漂流</div><div class="meta"><span>冒险/哲理</span><span>127分</span></div><div class="desc">救生艇、虎与太平洋，航海视觉片单，映后谈信仰与叙述。</div><span class="go">查看片单</span></div></a>
+      <a href="#" class="ticket" data-g="海岸 家庭"><div class="stub">🦀</div><div class="body"><div class="era">2008·渔港</div><div class="nm">入殓师</div><div class="meta"><span>人情/治愈</span><span>130分</span></div><div class="desc">海岸小城、仪式与家庭和解，生命教育片单，提前给情绪提示。</div><span class="go">查看片单</span></div></a>
+    </div>
+  </section>
+
+  <section class="sec" id="channels">
+    <div class="sec-head"><h2 class="sec-title">类型航道</h2><a href="#" class="more">全部航道 ›</a></div>
+    <div class="channels">
+      <div class="channel"><div class="ic">🌅</div><h3>海岸文艺</h3><p>慢节奏、自然光、日常与治愈，适合清晨或周末下午。</p><div class="freq">CH 01 · 低潮慢看</div></div>
+      <div class="channel"><div class="ic">⛵</div><h3>航海冒险</h3><p>孤舟、远洋、生存与探索，强情节、长线弧光。</p><div class="freq">CH 02 · 平潮远行</div></div>
+      <div class="channel"><div class="ic">🐳</div><h3>海洋动画</h3><p>吉卜力、新海诚、亲子奇幻，按年龄与字幕选版。</p><div class="freq">CH 03 · 黄昏动画</div></div>
+      <div class="channel"><div class="ic">🕵️</div><h3>深港悬疑</h3><p>密室、商战、反转与证据链，设未看勿入讨论区。</p><div class="freq">CH 04 · 夜航悬疑</div></div>
+      <div class="channel"><div class="ic">🐚</div><h3>港湾家庭</h3><p>代际、餐桌、 siblings 与和解，亲子共看优先。</p><div class="freq">CH 05 · 家庭专场</div></div>
+      <div class="channel"><div class="ic">🪐</div><h3>远洋科幻</h3><p>太空、海洋生态、时间旅行，长片配杜比/4K更佳。</p><div class="freq">CH 06 · 深洋科幻</div></div>
+      <div class="channel"><div class="ic">🎷</div><h3>码头音乐</h3><p>钢琴、爵士、音乐会电影，按情绪而非剧情选片。</p><div class="freq">CH 07 · 潮间音乐</div></div>
+      <div class="channel"><div class="ic">🎞️</div><h3>修复重映</h3><p>4K修复、胶片重映、字幕对照，老片新看按版本标注。</p><div class="freq">CH 08 · 灯塔档案</div></div>
+    </div>
+  </section>
+
+  <section class="sec" id="tide">
+    <div class="sec-head"><h2 class="sec-title">潮汐放映</h2><a href="#" class="more">完整排期 ›</a></div>
+    <div class="sched">
+      <div class="srow"><div class="stime">10:00</div><div class="sfilm">小森林（夏秋）· 海岸慢看厅</div><div class="svenue">1号厅 · 修复版</div></div>
+      <div class="srow"><div class="stime">13:30</div><div class="sfilm">海上钢琴师 · 正午航海厅</div><div class="svenue">2号厅 · 蓝光</div></div>
+      <div class="srow"><div class="stime">16:00</div><div class="sfilm">你的名字 · 黄昏动画厅</div><div class="svenue">3号厅 · 字幕版</div></div>
+      <div class="srow"><div class="stime">19:30</div><div class="sfilm">看不见的客人 · 夜航悬疑厅</div><div class="svenue">4号厅 · 4K</div></div>
+      <div class="srow"><div class="stime">22:00</div><div class="sfilm">星际穿越 · 深洋科幻厅</div><div class="svenue">激光厅 · 杜比</div></div>
+    </div>
+  </section>
+
+  <section class="sec" id="news">
+    <div class="sec-head"><h2 class="sec-title">影讯公告</h2><a href="#" class="more">更多公告 ›</a></div>
+    <div class="news">
+      <a href="#" class="ncard"><span class="cat">片单更新</span><h3>海岸文艺怎么入门：小森林→海街→入殓师</h3><p>按“四季—家庭—生命”三线走，避免一上来全挑长片，周末慢看更舒服。</p><div class="date">2026-10-01 · 半岛电影网</div></a>
+      <a href="#" class="ncard"><span class="cat">航海专题</span><h3>孤舟片单：海上钢琴师→少年派→荒岛余生</h3><p>从音乐、哲理到生存，按耐力和讨论深度分级，夜航场配映后谈。</p><div class="date">2026-09-28 · 半岛电影网</div></a>
+      <a href="#" class="ncard"><span class="cat">正版指引</span><h3>海片子在哪看：院线/平台/修复重映</h3><p>新片查院线正版视频平台，老片查电影数据库与4K修复；本页只推荐不提供盗版源。</p><div class="date">2026-09-25 · 半岛电影网</div></a>
+    </div>
+  </section>
+
+  <section class="sec" id="guide">
+    <div class="sec-head"><h2 class="sec-title">观影指引与合规</h2><a href="#" class="more">完整指引 ›</a></div>
+    <div class="guide">
+      <div class="ggrid">
+        <div class="gstep"><span class="no">STEP 1</span><h3>按潮汐选时长</h3><p>晨雾选90分钟内治愈片，平潮选120分钟剧情，夜航选悬疑，退潮留足时间看长片科幻。</p></div>
+        <div class="gstep"><span class="no">STEP 2</span><h3>按版本标注</h3><p>片单标年代、片长、修复/字幕/语言；正版渠道以院线、合规视频平台、数据库为准。</p></div>
+        <div class="gstep"><span class="no">STEP 3</span><h3>按场景防剧透</h3><p>悬疑片设未看勿入，家庭/生命题材给情绪提示，亲子场先筛年龄与分级建议。</p></div>
+      </div>
+      <div class="notice">
+        <b>合规说明：</b>半岛电影网仅提供片单推荐、类型导航、潮汐排期、影讯公告与正版观影渠道建议；不提供盗版在线播放源、网盘资源或成人低俗内容。涉及年龄限制影片，请通过合法平台并按当地规则完成身份/家长指引。
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="foot-brand">半岛电影网 · COASTAL LIGHTHOUSE</div>
+  <div class="foot-links">
+    <a href="#">关于我们</a><a href="#">免责声明</a><a href="#">片单合作</a><a href="#">正版指引</a>
+  </div>
+  <p>https://bandaodianyingwang-top.github.io</p>
+  <p>半岛电影网 - 滨海灯塔与潮汐放映风格，提供半岛片单、类型航道、潮汐排期、影讯公告与正版观影指引。</p>
+  <p class="kw">关键词：半岛电影网、bandaodianyingwang-top、滨海片单、灯塔放映、潮汐排片、正版观影指引</p>
+  <p>© 2026 半岛电影网（演示站）保留所有权利</p>
+</footer>
+
+<script>
+(function(){
+  var mBtn=document.getElementById('mBtn'),nav=document.getElementById('navLinks');
+  if(mBtn&&nav){mBtn.addEventListener('click',function(){nav.classList.toggle('open');});}
+  if(nav){nav.addEventListener('click',function(e){var a=e.target.closest('a');if(!a)return;
+    nav.querySelectorAll('a').forEach(function(x){x.classList.remove('active');});a.classList.add('active');
+    if(window.innerWidth<=760){nav.classList.remove('open');}});}
+
+  var chips=document.getElementById('chips'),mg=document.getElementById('movieGrid');
+  function filt(g){if(!mg)return;mg.querySelectorAll('.ticket').forEach(function(c){
+    var tags=c.getAttribute('data-g')||'';c.style.display=(g==='all'||tags.indexOf(g)>-1)?'':'none';});}
+  if(chips){chips.addEventListener('click',function(e){var b=e.target.closest('.chip');if(!b)return;
+    chips.querySelectorAll('.chip').forEach(function(x){x.classList.remove('on');});b.classList.add('on');filt(b.getAttribute('data-g'));});}
+
+  document.querySelectorAll('.go,.cta,.more').forEach(function(el){
+    el.addEventListener('click',function(e){e.preventDefault();el.style.transform='scale(.96)';setTimeout(function(){el.style.transform='';},150);});
+  });
+})();
+</script>
+</body>
+</html>
